@@ -36,9 +36,11 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Post $post)
     {
-        //
+        return view('posts.show')->with(['post' => $post]);
+//'post'はbladeファイルで使う変数。中身は$postはid=1のPostインスタンス。
+
     }
 
     /**
@@ -64,5 +66,4 @@ class PostController extends Controller
     {
         //
     }
-
 }
