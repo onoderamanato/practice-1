@@ -11,7 +11,11 @@
         <div class='posts'>
             @foreach ($posts as $post)
                 <div class='post'>
+<<<<<<< HEAD
+                <h2 class='title'>{{ $post->title }}</h2>
+=======
                 <h2 class='title'>
+>>>>>>> origin/main
                     <a href="/posts/{{ $post->id }}">{{ $post->title }}</a>
                     <a href='/posts/create'>create</a>
 
